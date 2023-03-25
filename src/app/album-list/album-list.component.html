@@ -1,0 +1,7 @@
+<div class="bg-secondary">
+    <div class="container p-2 list-group rounded-0" *ngIf="albums">
+        <a href="#" class="list-group-item list-group-item-action list-group-item-primary" aria-current="true"
+            *ngFor="let a of albums" routerLink="{{a.id}}">{{a.id}} -
+            {{a.title}}</a>
+    </div>
+</div>
